@@ -1,101 +1,494 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-focus-outline">
 <head>
-  <meta charset="utf-8">
-  <title>Faces</title>
-
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
+    <title>Ritesh Pradhan: Travel Videographer - A Portfolio Project by Patricia Molnar</title>
 </head>
 <body>
-  <div class="container">
-    <div class="heading">
-      <h1 class="title">Faces</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
-    </div>
-
-    <div class="above-game">
-      <p class="game-intro">Join the faces and get to the <strong>Faces tile</strong></p>
-      <a class="restart-button">New Game</a>
-    </div>
-
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-	        <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
+    <header>
+        <div id="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-      </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#top">
+                    <svg>
+                        <use href="#logo"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>  
+            </ul>
+        </nav>
 
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
+        <div class="banner-video">
+            <video autoplay muted loop playsinline id="video">
+                <source src="img/waves.mp4">
+                Your browser does not support HTML5 video.
+            </video>
         </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
+    </header>
+
+    <main class="content">
+
+        <div class="banner-content">   
+            <h1>Ritesh Pradhan</h1>
+            <p>Jpt Videographer</p>
+            <a href="#contact" class="button">Contact</a> 
         </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
 
-      <div class="tile-container">
+        <section id="portfolio">
+            <h2>
+                <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+            </h2>
+            <p>
+                In his many years, Ritesh has travelled far and wide, from the hills of Los Angeles to the ice caves of Iceland, to film video footage that helps businesses grow their brand.
+            </p>
 
-      </div>
-    </div>
+            <p>See some examples below:</p>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-grid-item">
+                    <video src="img/video.mp4" poster="img/cover.png" preload="none" controls></video>
+                    <div class="portfolio-grid-item-text">
+                        <p class="portfolio-grid-item-title">
+                            Project Name
+                        </p>
+                        <p class="portfolio-grid-item-brand">
+                            Brand
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ducimus!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-grid-item">
+                    <video src="img/city.mp4" poster="img/cover.png" preload="none" controls></video>
+                    <div class="portfolio-grid-item-text">
+                        <p class="portfolio-grid-item-title">
+                            Project Name
+                        </p>
+                        <p class="portfolio-grid-item-brand">
+                            Brand
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ducimus!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-grid-item">
+                    <video src="img/woman.mp4" poster="img/cover.png" preload="none" controls></video>
+                    <div class="portfolio-grid-item-text">
+                        <p class="portfolio-grid-item-title">
+                            Project Name
+                        </p>
+                        <p class="portfolio-grid-item-brand">
+                            Brand
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ducimus!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-grid-item">
+                    <video src="img/ocean.mp4" poster="img/cover.png" preload="none" controls></video>
+                    <div class="portfolio-grid-item-text">
+                        <p class="portfolio-grid-item-title">
+                            Project Name
+                        </p>
+                        <p class="portfolio-grid-item-brand">
+                            Brand
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ducimus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-divider" id="divider-boat">
+                <img src="img/boat2.png" alt="">
+                <div></div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>
+                <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>&nbsp; <span>J</span><span>a</span><span>m</span><span>e</span><span>s</span>
+            </h2>
+
+            <div class="about-grid">
+                
+                <div>
+                    <h3>Experience</h3>
+
+                    <p>
+                        Ritesh is an <a href="#">CAA</a> and <a href="#">FAA</a> certified videographer <strong>with over 10 years of experience in his field</strong>.
+                    </p>
+                    
+                    <p>
+                        He has worked with many brands to create promotional videos and commercials centered around nature and adventure. 
+                    </p>
+
+                    <img src="https://images.pexels.com/photos/5314218/pexels-photo-5314218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.png" alt="Image of Travel Videographer Ritesh Pradhan">
 
 
+                    <h3>Education</h3>
 
-    <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
-    </p>
-    <hr>
-    <!-- <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
-    </p> -->
-    <hr>
-    <!-- <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p> -->
-  </div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque magnam sit, neque repudiandae nisi voluptatibus quas, adipisci totam sint officia dolores ratione quaerat non beatae omnis soluta asperiores suscipit vero.
+                    </p>
 
-  <script src="js/bind_polyfill.js"></script>
-  <script src="js/classlist_polyfill.js"></script>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_storage_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
+                    <p>
+                        Cumque magnam sit, neque repudiandae nisi voluptatibus quas, adipisci totam <strong>sint officia dolores ratione quaerat non beatae omnis soluta</strong> asperiores suscipit vero.
+                    </p>
+
+                    <h3>Skills</h3>
+
+                    <p>
+                        Some of his skills include, but are not limited to:
+                        <ul>
+                            <li>Manage time efficiently and <strong>deliver content by deadline</strong></li>
+                            <li>Work harmoniously with Creative director or collaborative team</li>
+                            <li>Know what type of equipment to use for your individual project</li>
+                            <li>Shooting <strong>high quality video footage</strong> both indoors and outdoors</li>
+                            <li><strong>Aerial videography</strong>: licensed drone operator</li>
+                            <li>Setting up equipment, troubleshooting problems and making necessary repairs so projects can go forward even in more desolate locations</li>
+                            <li>Good communication skills and the ability to interview people</li>
+                            <li>Flexibility and highly adaptive to different situations</li>
+                            <li>Patience to wait for the perfect shot</li>
+                        </ul>
+                    </p>
+
+                    <div class="brands">
+                        <p>Some of the brands that have benefited from his work are:</p>
+                        <div class="brands-grid">
+                            <div>
+                                <svg>
+                                    <use href="#clock"></use>
+                                </svg>
+                                <span>name</span>
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="#tv"></use>
+                                </svg>
+                                <span>name</span>
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="#suitcase"></use>
+                                </svg>
+                                <span>name</span>
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="#letter"></use>
+                                </svg>
+                                <span>name</span>
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="#tree"></use>
+                                </svg>
+                                <span>name</span>
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="#code"></use>
+                                </svg>
+                                <span>name</span>
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="#cake"></use>
+                                </svg>
+                                <span>name</span>
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="#heart"></use>
+                                </svg>
+                                <span>name</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="image-divider" id="divider-snow">
+                <img src="img/blw-ice.png" alt="">
+                <div></div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>
+                <span>T</span><span>e</span><span>s</span><span>t</span><span>i</span><span>m</span><span>o</span><span>n</span><span>i</span><span>a</span><span>l</span><span>s</span>
+            </h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-comment">
+                    <p>
+                        <svg><use href="#quote-open"></use></svg>
+                        I employed Ritesh for a project recently and I was very impressed by his professionalism: he cares very much about creating high quality content and delivers what he promises.
+                        <svg><use href="#quote-close"></use></svg>
+                    </p>
+
+                    <p>Isabella Norton</p>
+                </div>
+    
+                <div class="testimonial-comment">
+                    <p>
+                        <svg><use href="#quote-open"></use></svg>
+                        Ritesh has helped us launch 3 different products over the past years. The quality of his work is very high and his creative vision always adds to the project. He always delivers content on time and is a reliable person to work with. I definitely recommend him. 
+                        <svg><use href="#quote-close"></use></svg>
+                    </p>
+                    <p>Nicky Petersen</p>
+                </div>
+    
+                <div class="testimonial-comment">
+                    <p>
+                        <svg><use href="#quote-open"></use></svg>
+                        Ritesh is a very dedicated videographer, who works hard <i>and</i> smart to create content that is profitable for your brand. I couldn't help but be impressed with his work ethic and skill. 
+                        <svg><use href="#quote-close"></use></svg>
+                    </p>
+
+                    <p>Lloyd Smith</p>
+                </div>
+    
+                <div class="testimonial-comment">
+                    <p>
+                        <svg><use href="#quote-open"></use></svg>
+                        Ritesh was a pleasure to work with. He delivered the videos we asked for on time and on budget. I will definitely hire him for our next project again. 
+                        <svg><use href="#quote-close"></use></svg>
+                    </p>
+                    <p>Austin Pratt</p>
+                </div>
+
+                <div class="testimonial-comment">
+                    <p>
+                        <svg><use href="#quote-open"></use></svg>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione, amet sint dolorum libero vel sed repellat ad pariatur molestiae blanditiis cumque vitae earum? Expedita laborum ad labore tempore, nesciunt dolorum error, adipisci eum atque molestias, rem velit. Maxime, saepe. 
+                        <svg><use href="#quote-close"></use></svg>
+                    </p>
+                    <p>John Doe</p>
+                </div>
+
+                <div class="testimonial-comment">
+                    <p>
+                        <svg><use href="#quote-open"></use></svg>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam esse eos recusandae repellat modi obcaecati libero est ipsam quas iure assumenda quisquam quia dolor sapiente ea, ipsum saepe vitae fuga. 
+                        <svg><use href="#quote-close"></use></svg>
+                    </p>
+                    <p>Jane Doe</p>
+                </div>
+            </div>
+
+            <div class="image-divider" id="divider-sand">
+                <img src="img/bawpyramid.png" alt="">
+                <div></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+                <h2>
+                    <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                </h2>
+
+                <p>
+                    Do you have a project you need video for? <strong>Call now</strong> on 
+                    <a href="tel:01023456789">010 2345 6789</a> <strong>or send an email</strong> by filling out the below contact form to discuss how Ritesh can be part of it.
+                </p>
+    
+                <form action="" class="effect"> 
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name">
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email">
+    
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject">
+    
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    
+                    <input type="submit" name="submit" value="Submit" class="button">
+                </form>
+            </div>
+        </section>
+    </main>
+ 
+    <footer>
+        <div class="blur-effect"></div>
+        <p>
+            This website is a portfolio page and does not offer actual travel videography services. 
+        </p>
+        <p>
+            Created by Patricia Molnar. For web design and development services please visit: <a href="http://pmcoding.co.uk/">pmCoding</a>
+        </p>
+
+        <p class="footer-links">
+            <a href="#portfolio">portfolio</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+            <a href="#top">back to top</a>
+        </p>
+
+        <p class="footer-social">
+            <a href="https://www.youtube.com/channel/riteshpradhan" target="_blank">
+                <svg>
+                    <use href="#youtube"></use>
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/riteshpradhan/" target="_blank">
+                <svg>
+                    <use href="#linkedin"></use>
+                </svg>
+            </a>
+
+            <a href="https://twitter.com/riteshpradhan" target="_blank">
+                <svg>
+                    <use href="#twitter"></use>
+                </svg>
+            </a>
+
+            <a href="https://www.instagram.com/riteshpradhan/" target="_blank">
+                <svg>
+                    <use href="#instagram"></use>
+                </svg>
+            </a>
+
+            <a href="https://github.com/riteshpradhan" target="_blank">
+                <svg>
+                    <use href="#github"></use>
+                </svg>
+            </a>
+        </p>
+        
+        
+    </footer>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="instagram">
+            <path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="twitter">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="github">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="linkedin">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="youtube">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="quote-open">
+            <path path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="quote-close">
+            <path path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="clock">
+            <path d="M13 12v-5h-1.999v6.999h5.999v-1.999h-4zm-12.197-4.285c-1.261-1.944-1.035-4.569.675-6.266 1.7-1.687 4.305-1.896 6.235-.645-3.171 1.219-5.692 3.741-6.91 6.911zm18.428 11.18c1.715-1.794 2.771-4.219 2.771-6.896 0-5.522-4.477-10-10.002-10-5.522 0-10 4.477-10 10 0 2.678 1.059 5.104 2.772 6.898l-1.736 4.506c-.159.394.288.759.643.522l3.581-3.122c1.412.761 3.026 1.195 4.742 1.195 1.717 0 3.334-.434 4.744-1.195l3.582 3.122c.355.237.803-.128.643-.522l-1.74-4.508zm-7.23 1.103c-4.412 0-8.001-3.588-8.001-8s3.589-8 8.001-8c4.412 0 8.002 3.588 8.002 8s-3.59 8-8.002 8zm10.553-18.52c-1.697-1.71-4.324-1.937-6.268-.675 3.17 1.218 5.693 3.739 6.912 6.91 1.25-1.931 1.041-4.535-.644-6.235z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="tv">
+            <path d="M20.327 13.099l-.427-.427.71-.71.424.427-.707.71zm-.417 4.467l-.708-.709-.428.427.707.709.429-.427zm4.09-11.566v16h-24v-16h10.888l-2.888-3.375.781-.625 3.219 3.75 3.219-3.75.781.625-2.888 3.375h10.888zm-21.049 12.993c.674.671 3.362 1.007 6.05 1.007 2.687 0 5.375-.336 6.049-1.007.633-.632.95-2.851.95-5.059 0-2.181-.31-4.351-.93-4.97-.637-.635-3.399-.964-6.141-.964-2.681 0-5.346.314-5.997.964-.603.601-.913 2.668-.931 4.786-.018 2.268.299 4.594.95 5.243zm15.049-5.9c0 1.021.796 1.851 1.802 1.904 1.097.059 2.009-.814 2.009-1.904 0-1.049-.85-1.906-1.907-1.906-1.048 0-1.904.847-1.904 1.906zm4-3.093v-.555h-4v.555h4zm-4 7.988c0 1.062.86 1.907 1.903 1.907 1.058 0 1.907-.858 1.907-1.907s-.85-1.906-1.907-1.906c-1.047 0-1.903.846-1.903 1.906zm4-9.988h-4v.555h4v-.555z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="suitcase">
+            <path d="M7.488 24h-.001c-.266 0-.487-.216-.487-.487v-.513c-1.104 0-2-.896-2-2v-13c0-1.104.896-2 2-2h2v-5c0-.552.448-1 1-1h4c.552 0 1 .448 1 1v5h2c1.105 0 2 .896 2 2v13c0 1.104-.895 2-2 2v.488c0 .283-.228.512-.512.512h-.001c-.265 0-.487-.214-.487-.487v-.513h-8v.488c0 .283-.229.512-.512.512zm9.012-13c.277 0 .5-.224.5-.5s-.223-.5-.5-.5h-9c-.276 0-.5.224-.5.5s.224.5.5.5h.507c-.072 1.037.389 1.936.996 2.352l-.003 1.476 3.529 3.543 2.834-2.823-3.529-3.542-1.289-.003c-.124-.364-.335-.721-.578-1.003h6.533zm-4.851 3.271l1.821 1.821-.354.353-1.821-1.82.354-.354zm.683 1.744l-.353.354-1.214-1.214.354-.353 1.213 1.213zm-.153-2.274l1.821 1.821-.354.353-1.82-1.821.353-.353zm-1.572-.726c-.102.283-.331.462-.606.539.042.416.551.6.85.303.279-.276.142-.754-.244-.842zm-1.361-2.015c.334.257.614.638.763 1.002l-1.003-.002-.001.682-.018-.022c-.332-.401-.529-.99-.477-1.66h.736zm4.254-9h-3c-.276 0-.5.224-.5.5v3.5h4v-3.5c0-.276-.224-.5-.5-.5z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="tree">
+            <path d="M13 24h-2v-5.126c-.806-.208-1.513-.661-2.039-1.274-.602.257-1.265.4-1.961.4-2.76 0-5-2.24-5-5 0-1.422.595-2.707 1.55-3.617-.348-.544-.55-1.19-.55-1.883 0-1.878 1.483-3.413 3.341-3.496.823-2.332 3.047-4.004 5.659-4.004 2.612 0 4.836 1.672 5.659 4.004 1.858.083 3.341 1.618 3.341 3.496 0 .693-.202 1.339-.55 1.883.955.91 1.55 2.195 1.55 3.617 0 2.76-2.24 5-5 5-.696 0-1.359-.143-1.961-.4-.526.613-1.233 1.066-2.039 1.274v5.126z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="cake">
+            <path d="M2.399 12.149c-.129-.246-.397-.756-.397-1.631 0-2.009 1.629-3.479 3.242-3.518h13.513c1.803.091 3.243 1.646 3.243 3.519 0 .592-.145 1.148-.4 1.636 1.389.448 2.4 1.794 2.4 3.364 0 .962-.383 1.831-1 2.46v6.021h-22v-6.022c-.429-.438-1-1.37-1-2.46 0-1.655 1.107-2.944 2.399-3.369zm18.601 6.824l-.405.025c-.775 0-1.541-.27-2.154-.79-.576.488-1.333.789-2.155.789-.812 0-1.566-.295-2.142-.779-.581.487-1.341.78-2.136.78-.807 0-1.575-.292-2.149-.78-.586.491-1.346.78-2.137.78-.775 0-1.526-.26-2.16-.79-.561.479-1.328.79-2.154.79l-.408-.025v3.027h18v-3.027zm-17.708-4.973c-.627.049-1.243.635-1.288 1.421-.051.887.632 1.585 1.454 1.576 1.176-.014 1.915-.86 2.117-1.997.217.88.986 1.975 2.145 1.996 1.156.021 1.99-.959 2.161-1.958l.008-.038c.199 1.04.99 1.996 2.109 1.996 1.155 0 1.917-.872 2.172-1.996.248 1.138 1.035 1.994 2.117 1.997 1.108.003 1.955-.928 2.203-1.997.188.828.804 1.985 2.051 1.998.759.008 1.46-.65 1.46-1.483 0-.837-.649-1.481-1.318-1.517l-17.391.002zm10.953-2c1.108-.009 1.997-.931 2.245-2 .188.828.804 1.985 2.051 1.998.759.008 1.46-.65 1.46-1.483 0-.837-.649-1.481-1.318-1.517l-13.391.002c-.627.049-1.243.635-1.288 1.421-.051.887.632 1.585 1.454 1.576 1.176-.014 1.915-.86 2.117-1.997.217.88 1.002 1.991 2.161 2h.023c1.199-.008 2.191-1.326 2.241-2 .052.659.983 1.992 2.219 2h.026zm-2.245-9.146c-.454-1.947-2.479-.955-1.531.577.765 1.237 1.095 1.951 1.126 3.103-1.378-1.716-3.597-2.838-3.595-4.519.002-1.287.941-2.014 2-2.014.705 0 1.522.256 2 .882.485-.6 1.329-.887 2-.882 1.06.008 1.998.669 2 2.014.002 1.681-2.146 2.784-3.595 4.519.031-1.152.361-1.866 1.126-3.103.948-1.532-1.089-2.508-1.531-.577z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="letter">
+            <path d="M21.155 8.64c-.909 1.519-2.327 3.067-4.097 3.004-.413.706-.852 1.677-1.339 2.803l-1.312.553c.936-2.343 2.231-4.961 3.698-6.994-.67.529-1.746 1.637-2.662 2.783-1.098-1.828-.3-3.691.973-5.179.021.641.359 1.196.601 1.475-.087-.53-.114-1.489.195-2.351.718-.732 1.364-1.271 2.113-1.76-.083.478.08 1.026.262 1.361.024-.49.224-1.43.521-1.84.924-.727 2.332-1.373 3.892-1.495-.081.973-.436 2.575-1.024 3.604-.515.404-1.221.68-1.791.833.493.089 1.031.077 1.494-.001-.269.743-.552 1.428-.998 2.276-.679.468-1.578.732-2.203.825.46.187 1.272.245 1.677.103zm-13.841 3.805l.645.781 4.773-2.791-.668-.768-4.75 2.778zm6.96-.238l-.668-.767-4.805 2.808.645.781 4.828-2.822zm4.679.007c-.421.203-.851.341-1.286.398-.12.231-.246.494-.377.773l.298.342c.623.692.459 1.704-.376 2.239-.773.497-5.341 3.376-6.386 4.035-.074-.721-.358-1.391-.826-1.948-.469-.557-6.115-7.376-7.523-9.178-.469-.6-.575-1.245-.295-1.816.268-.549.842-.918 1.43-.918.919 0 1.408.655 1.549 1.215.16.641-.035 1.231-.623 1.685l1.329 1.624 7.796-4.446c1.422-1.051 1.822-2.991.93-4.513-.618-1.053-1.759-1.706-2.978-1.706-1.188 0-.793-.016-9.565 4.475-1.234.591-2.05 1.787-2.05 3.202 0 .87.308 1.756.889 2.487 1.427 1.794 7.561 9.185 7.616 9.257.371.493.427 1.119.15 1.673-.277.555-.812.886-1.429.886-.919 0-1.408-.655-1.549-1.216-.156-.629.012-1.208.604-1.654l-1.277-1.545c-.822.665-1.277 1.496-1.377 2.442-.232 2.205 1.525 3.993 3.613 3.993.596 0 1.311-.177 1.841-.51l9.427-5.946c.957-.664 1.492-1.781 1.492-2.897 0-.745-.24-1.454-.688-2.003l-.359-.43zm-7.933-10.062c.188-.087.398-.134.609-.134.532 0 .997.281 1.243.752.312.596.226 1.469-.548 1.912l-5.097 2.888c-.051-1.089-.579-2.081-1.455-2.732l5.248-2.686zm2.097 13.383l.361-.905.249-.609-3.449 2.017.645.781 2.194-1.284z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="code">
+            <path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="heart">
+            <path d="M18 1l-6 4-6-4-6 5v7l12 10 12-10v-7z"/>
+        </symbol>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <symbol id="logo">
+            <path d="M13 24.004v-4.084c-2.836-.476-5-2.946-5-5.917 0-1.561.022-1.225 5.076-13.385.016 0 .223-.615.924-.615.697 0 .909.613.925.613 4.656 11.172 5.075 11.546 5.075 13.387 0 2.971-2.164 5.441-5 5.917v4.084h-2zm-7 0h-2v-3.434c-2.28-.464-4-2.482-4-4.899 0-1.302.019-1.023 4.23-11.154.014 0 .186-.513.77-.513.581 0 .758.511.771.511.978 2.346 1.731 4.118 2.311 5.485-1.05 2.582-1.082 2.941-1.082 4.004 0 1.844.723 3.523 1.903 4.781-.718.899-1.735 1.548-2.903 1.785v3.434zm15-6.003c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3z"/>
+        </symbol>
+    </svg>
+
+    <script src="script.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Permanent+Marker&display=swap');
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --marker: 'Permanent Marker', cursive;
+
+    --rose: #E3242B;
+    --focus: #076cab;
+    --dblue: #34665C;
+    --blue: #57a898; 
+    --light: #f1f2f4;
+}
+
+/* General */
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.button {
+    display: inline-block;
+    color: #fff; 
+    padding: 0.8rem 2rem 0.75rem;
+    text-decoration: none;
+    margin: 1.5rem auto;
+    background-color: var(--rose);
+    border-bottom: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: all 0.2s linear;
+    font-weight: 500;
+}
+
+h2 {
+    display: inline-block; 
+    font-size: 2rem;
+    margin: 1.5rem 0 0 1rem;
+    position: relative;
+    font-weight: 500;
+}
+
+h2::after {
+    content: ''; 
+    position: absolute; 
+    left: -1rem; 
+    height: 2px; 
+    width: calc(100% + 1rem); 
+    bottom: 0; 
+    background-color: var(--blue);
+    transform: scaleX(0); 
+    transform-origin: left; 
+    transition: transform 1s ease-in;
+}
+
+h2.appear::after {
+    transform: scaleX(1);
+}
+
+h2 span {
+    position: relative; 
+    left: -300px; 
+    opacity: 0;
+    transition: opacity 0.2s linear; 
+    font-family: var(--marker);
+}
+
+h2.appear span { 
+    left: 0; 
+    opacity: 1;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p, h3 {
+    margin: 0.8rem 0; 
+    padding: 0 1rem;
+}
+
+a {
+    color: var(--dblue); 
+    text-decoration: none; 
+    border-bottom: 1px solid var(--dblue);
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+}
+
+strong {
+    font-weight: 500;
+}
+
+/* images diving sections */
+
+.image-divider {
+    position: relative;
+}
+
+.image-divider img {
+    width: 100%; 
+}
+
+.image-divider > div {
+    width: 100%; 
+    height: 40px;  
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+}
+
+#divider-boat div {
+    background-image: linear-gradient(transparent, #fafafa, #fafafa); 
+}
+
+#divider-snow {
+    margin-bottom: -2.8rem;
+}
+
+#divider-snow div {
+    background-image: linear-gradient(transparent, #fcfcfc, #fcfcfc);
+}
+
+#divider-sand div {
+    height: 20px;
+    background-image: linear-gradient(transparent, #dadada, #dadada);
+}
+
+
+/* Header and Navigation */
+header {
+    height: 100%; 
+}
+
+/* Burger Icon */
+#burger {
+    display: inline-block; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    position: relative; 
+    z-index: 2;
+}
+
+.change {
+    transform: rotate(90deg);
+    transition: all 0.5s ease-in-out; 
+    margin-top: 3px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: var(--light);
+    margin: 6px 0;
+    transition: 0.3s;
+    pointer-events: none;
+}
+  
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-6px, -6px);
+transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Navigation Menu */
+#nav {
+    position: absolute;
+    top: 0;
+    height: 0; 
+    overflow: hidden; 
+    background-color: var(--dblue);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+#nav.show {
+    height: 100%;
+    width: 100%; 
+    opacity: 1;
+}
+
+#nav ul {
+    margin-top: 2rem;
+    list-style-type: none;
+}
+
+#nav li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none; 
+    color: #fff;
+    border-bottom: none; 
+    font-weight: 400;
+}
+
+/* removing site icon with trees */
+#nav li:nth-of-type(3) {
+    display: none;  
+}
+
+/* Banner with video background */
+.banner-video {
+    height: 100vh;
+}
+
+.banner-video video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.banner-content {
+    position: absolute;
+    width: 100%; 
+    top: 50%; 
+    left: 0;   
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.banner-content > h1,
+.banner-content p {
+    margin: 0; 
+    padding: 0;
+    text-shadow: 0 5px 10px rgba(55, 55, 55, 0.2);
+}
+
+.banner-content h1 { 
+    font-size: calc(1rem + 5vw);
+}
+
+.banner-content p {
+    font-size: calc(1rem + 2vw);
+}
+
+.banner-content .button {
+    box-shadow: 0 45px 35px -15px rgba(55, 55, 55, 0.45); 
+}
+
+/* Portfolio */
+
+#portfolio {
+    background-color: var(--light);
+}
+
+#portfolio video {
+    width: 100%;  
+}
+
+.portfolio-grid-item {
+    text-align: center;
+    line-height: 1;
+    background-color: #fff;
+    box-shadow: 0 45px 35px -15px rgba(55, 55, 55, 0.15);
+    margin: 1rem 1rem 3rem;
+}
+
+.portfolio-grid-item-text { 
+    padding: 0.5rem;
+}
+
+.portfolio-grid-item-title {
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+}
+
+.portfolio-grid-item-title::after {
+    content: '';
+    position: absolute; 
+    bottom: -7px; 
+    height: 2px; 
+    left: 0; 
+    width: 100%; 
+    background-color: var(--blue);
+}
+
+.portfolio-grid-item-brand {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* About */
+
+#about {
+    background-image: linear-gradient(#fafafa, #fff, #fff);
+    padding-bottom: 2rem;
+}
+
+#about img {
+    width: 100%;
+}
+
+#about ul {
+    margin: 1rem 2rem;
+}
+
+#about li {
+    margin-bottom: 10px;
+}
+
+::marker {
+    color: var(--blue);
+}
+
+.brands > p {
+    font-weight: 500;
+}
+
+.brands-grid {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-gap: 0.5rem;
+}
+
+.brands-grid > div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.brands-grid svg {
+    width: 24px; 
+    height: 24px; 
+    fill: var(--blue);
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+    background-image: linear-gradient(#fcfcfc, #fff);
+    margin-bottom: -10px;
+}
+
+.testimonial-comment {
+    opacity: 0; 
+    transition: opacity 0.5s ease-in;
+}
+
+.testimonial-comment.appear {
+    opacity: 1; 
+}
+
+.testimonial-comment > p:nth-of-type(1) {
+    margin: 1.5rem 1rem 0.5rem;
+    padding: 0.5rem;
+}
+
+.testimonial-comment svg {
+    width: 24px; 
+    height: 24px;
+    fill: var(--blue);
+}
+
+.testimonial-comment svg:first-of-type {
+    margin-right: 5px;
+}
+
+.testimonial-comment svg:last-of-type {
+    margin-left: 5px;
+}
+
+.testimonial-comment > p:nth-of-type(2) {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.testimonial-comment > p:nth-of-type(2)::before {
+    content: '- ';
+}
+
+/* Contact */
+
+#contact {
+    background-color: #dadada;
+    background-image: url('img/baw-mountain.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center; 
+}
+
+form {
+    margin: 1rem 1rem 0rem;
+    padding-bottom: 11rem;
+}
+
+form label, 
+form input, 
+form textarea {
+    display: block; 
+    width: 100%; 
+}
+
+form label {
+    font-weight: 500;
+}
+
+form input[type="submit"] {
+    border: none;
+}
+
+/* Footer */
+footer {
+    color: white;
+    flex-shrink: 0;
+    line-height: 1;
+    font-size: 0.9rem;
+    background-color: #0d0d0d;
+    position: relative;  
+    padding-top: 0.5rem;
+}
+
+.blur-effect {
+    height: 40px;
+    width: 100%; 
+    position: absolute; 
+    top: -30px;
+    margin: 0; 
+    background-image: linear-gradient(transparent, #0d0d0d, #0d0d0d);
+}
+
+footer a {
+    color: #fff;
+    font-weight: 400;
+    text-transform: lowercase;
+    border-bottom: 1px solid white; 
+}
+
+.footer-links {
+    margin-top: 0.5rem; 
+    margin-bottom: 1rem;
+}
+
+.footer-social a {
+    border-bottom: none; 
+}
+
+footer svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    transition: fill 0.2s linear;
+}
+
+/* Focus Rules */
+
+/* No Outline Unless Tabbing */
+.no-focus-outline a:focus,
+.no-focus-outline button:focus {
+  outline: none;
+  box-shadow: none; 
+}
+
+#nav a:focus {
+    outline: none;
+    background-color: var(--focus);
+    transition: none;
+}
+
+#nav li:nth-of-type(3) a:focus {
+    background-color: transparent;
+}
+
+.button:focus {
+    background-color: var(--focus);
+    color: #fff;
+    outline: none;
+    transition: none;
+}
+
+a:focus {
+    color: var(--focus); 
+    border-bottom: none; 
+    outline: 1px solid var(--focus);
+    transition: none;
+}
+
+input:focus,
+textarea:focus,
+video:focus {
+    outline: 2px solid var(--focus);
+    outline-offset: -1px;
+}
+
+.footer-social a:focus {
+    outline: none;
+}
+
+.footer-social a:focus svg {
+    fill: var(--focus);
+}
+
+@media (min-width: 550px) {
+    /* Adjusting space between content and page side */
+    p, h3, .testimonials-grid { 
+        padding: 0 2rem;
+    }
+
+    h2 {
+        margin-left: 2rem;
+    }
+
+    h2::after {
+        left: -2rem; 
+        width: calc(2rem + 100%);
+    }
+
+    #about ul {
+        margin-left: 3rem;
+    }
+
+    form {
+        margin-left: 2rem; 
+        margin-right: 2rem;
+        padding-bottom: 14rem;
+    }
+
+    form .button {
+        width: auto; 
+        position: relative; 
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .testimonial-comment > p:nth-of-type(1) {
+        margin: 0;
+    }
+
+    .portfolio-grid {
+        margin-left: 1rem; 
+        margin-right: 1rem;
+    }
+
+    footer p {
+        padding: 0;
+        margin: 0 1rem;
+        line-height: 1.5;
+    }
+
+
+    /* making testimonials stack next to each other */
+    .testimonials-grid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 1rem;
+    }
+
+}
+
+@media (min-width: 800px) {
+    /* general */
+    body {
+        font-size: 1.2em;
+    }
+
+    p, h3 { 
+        padding: 0 3rem;
+    }
+
+    h2 {
+        margin-left: 3rem;
+    }
+
+    h2::after {
+        left: -3rem; 
+        width: calc(3rem + 100%);
+    }
+
+    /* Navigation */
+    #burger {
+        display: none;
+    }
+
+    #nav {
+        width: 100%; 
+        opacity: 1; 
+        height: auto;
+        position: fixed; 
+        left: 50%; 
+        transform: translateX(-50%);
+        background-color: transparent;
+    }
+
+    #nav.blue {
+        background-color: var(--blue);
+        height: 50px;
+        overflow: hidden;
+    }
+
+    #nav ul {
+        display: grid; 
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 0;
+    }
+
+    #nav li {
+        text-align: center;
+    }
+
+    #nav li a {
+        width: 100%;
+        display: inline-block;
+        padding: 0.5rem 0rem;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    #nav li:nth-of-type(3) {
+        display: inline; 
+    }
+
+    #nav li:nth-of-type(3) svg {
+        fill: #fff;
+        width: 24px;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .banner-content {
+        width: 60%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner-content h1 { 
+        font-size: calc(1rem + 6vw);
+    }
+    
+    .banner-content p {
+        font-size: calc(1rem + 3vw);
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 2rem;
+        margin-left: 3rem; 
+        margin-right: 3rem;
+    }
+
+    .portfolio-grid-item {
+        margin: 0;
+    }
+
+    /* About */
+    #about img {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #about ul {
+        margin-left: 4rem;
+    }
+
+    /* Testimonials */
+
+    .testimonials-grid {
+        padding: 0 3rem;
+    }
+
+    #divider-sand div {
+        height: 40px;
+    }
+    /* Contact */
+    #contact {
+        background-size: contain;
+    }
+
+    form {
+        margin: 0 3rem;
+        padding-bottom: 13rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* General */
+    p, h3 { 
+        padding: 0 7rem;
+    }
+
+    h2 {
+        margin-left: 7rem;
+    }
+
+    h2::after {
+        left: 0;
+        width: 100%;
+    }
+
+    .banner-content h1 {
+        line-height: 1.1;
+    }
+
+    /* Portfolio */
+
+    #portfolio {
+        padding-top: 2.5rem;
+    }
+
+    .portfolio-grid {
+        grid-gap: 3rem;
+        margin: 2rem 7rem 1rem;
+    }
+
+    /* About */
+
+    .about-grid {
+        padding-left: 7rem; 
+        padding-right: 7rem;
+        column-count: 2;
+        column-gap: 3rem;
+    }
+
+    .about-grid h3 {
+        padding: 0;
+    }
+
+    .about-grid p {
+        padding: 0; 
+    }
+
+    #about ul {
+        margin-left: 1.5rem;
+    }
+
+    #about img {  
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        padding: 0;
+    }
+
+    /* Contact */
+
+    form {
+        width: 40%;
+        margin: 0 7rem; 
+        padding-bottom: 4rem;
+    }
+
+    .footer-social {
+        float: right;
+        margin-top: -2.5rem
+    }
+}
+
+
+@media not all and (hover: none) {
+    #burger:hover {
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: var(--blue);
+        color: white;
+        border-bottom: none;
+    }
+
+    a:hover {
+        color: var(--blue); 
+        border-bottom: 1px solid var(--blue);
+    }
+
+    footer a:hover {
+        color: var(--blue);
+        border-bottom: 1px solid var(--blue);
+    }
+
+    .footer-social a:hover {
+        border-bottom: none; 
+    }
+
+    footer svg:hover {
+        fill: var(--blue);
+    }
+
+    #nav li a:hover {
+        background-color: var(--blue);
+    }
+
+    #nav.blue a:hover {
+        background-color: var(--dblue);
+    }
+
+
+    #nav li:nth-of-type(3) a:hover {
+        background-color: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
