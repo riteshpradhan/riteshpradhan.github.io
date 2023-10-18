@@ -1,2 +1,4 @@
-#Faces 
-Just for fun
+# Faces 
+Faces moved to faces branch
+
+Testing the static site with github
